@@ -1,0 +1,243 @@
+* {
+  margin: 0 0;
+  padding: 0 0;
+  color: var(--color_grey);
+}
+
+/* Var colors */
+:root {
+  --color1: rgb(146, 174, 164);
+  --color_orange: #d89584;
+  --color_grey: rgb(101, 105, 124);
+}
+
+/* all relative to the nav bar on top right */
+.nav_bar {
+  color: white;
+  background-color: var(--color1);
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+  padding-top: 12.5px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/* Header */
+.background_img {
+  background-image: url(pictures/pic1.jpeg);
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* z-index: -1; */
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.header {
+  height: 300px;
+  width: 100%;
+  background-color: azure;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.header h1 {
+  color: white;
+}
+
+/* Button search evolutive */
+.search-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--color1);
+  height: 50px;
+  border-radius: 40px;
+  padding: 5px;
+  display: flex;
+  z-index: 1;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+  background: white;
+}
+
+.search-btn {
+  color: black;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+a.search-btn {
+  text-decoration: none;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+
+/* Search box */
+div.search_bar {
+  display: flex;
+  justify-self: center;
+  border: black solid 2px;
+  background-color: white;
+  width: 60%;
+  height: 40px;
+  position: relative;
+  /* left: calc(50% - 125px); */
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 20px;
+  padding: 0px 10px;
+  border-radius: 50px;
+}
+
+.search_elements {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0 5px;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #424242;
+  font-weight: 500;
+}
+
+.search :focus {
+  outline: none;
+}
+
+.fa-search {
+  font-size: 25px;
+  color: #424242;
+}
+
+/* Main and Second part*/
+.main_part {
+  display: flex;
+  padding: 10px 10px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main_part h2,
+.scd_part h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.section {
+  border: var(--color1) solid 1px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 4px #888888;
+  margin-top: 20px;
+  padding: 10px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: 1s;
+}
+
+.section a {
+  text-decoration: none;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+}
+
+.img_section {
+  height: 50px;
+  width: 50px;
+}
+
+/* Second part */
+.scd_part {
+  padding: 0 10px;
+}
+
+button.btn_calculate {
+  margin-top: 10px;
+  padding: 10px 30px;
+  background: var(--color1);
+  border-radius: 20px;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+.separator {
+  width: 100%;
+  border-bottom: var(--color1) solid 2px;
+  margin: 40px 0 20px 0;
+}
+
+/* Last part : Presentation */
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dave {
+  background-image: url(pictures/Dave.jpg);
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+.presentation p {
+  margin: 0 20px;
+}
+
+.presentation_text {
+  margin: 20px 3%;
+}
+
+/* Copyright */
+.copyright {
+  border-top: var(--color1) solid 0.5px;
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+}
